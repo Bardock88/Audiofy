@@ -648,7 +648,7 @@ object RouteConsole : Route {
         TwoPane(
             modifier = Modifier/*.thenIf(AppConfig.isWidgetToConsoleTransitionEnabled){ sharedBounds(ID_BACKGROUND)}*/,
             strategy = strategy,
-            background = COLOR_BACKGROUND,
+            background = AppTheme.colors.background(1.dp),
             spacing = CP.normal,
             secondary = {
                 val insets = when {
